@@ -1,6 +1,6 @@
 import numpy as np
 import random
- 
+import pandas as pd
 from dataset import Dataset
 
 # Action space: refers to the set of possible actions that an agent can take in a given state
@@ -19,7 +19,7 @@ class Observation_space:
 
 class Environment:
 # features = 'Close'
-    def __init__(self, symbol, features, days): #env = Environment(['BTC-USD'],'Close','5d')
+    def __init__(self, symbol, features, days): #env = Environment('BTC-USD','Close','5d')
         self.days = days
         self.symbol = symbol #tick name of the stock
         self.features = features #features of the stock, like open, close, high, low, volume
@@ -34,7 +34,7 @@ class Environment:
 
         self.data_ = Dataset().get_data(days=str(self.days), ticker=self.symbol, interval="1h")
         #data_ = Dataset().get_data(days='5d', ticker=['BTC-USD'], interval="1h") #sample input
-        self.data = self.data_[self.features].copy()
+        self.data = pd.DataFrame(self.data_[self.features].copy())
 
     def _create_features(self): #feature engineering
         self.data['return'] = np.log(self.data['Close'] / #daily return, 每筆資料的return
