@@ -2,7 +2,7 @@
 ## Problem Statement
 Utilizing Reinforcement Learning to trade US stocks through Python, and hope to build a profitable trading bot!
 
-<img title="Trading Bot" alt="Alt text" src=" https://cdn.activestate.com/wp-content/uploads/2020/05/Trading_hero.jpg">
+<img title="Trading Bot" alt="Alt text" src="https://cdn.activestate.com/wp-content/uploads/2020/05/Trading_hero.jpg">
 
 ## Introduction
 ### Key concepts in Reinforcement Learning include:
