@@ -8,7 +8,7 @@ Utilizing Reinforcement Learning to trade US stocks through Python, and hope to 
 ### Key concepts in Reinforcement Learning include:
 * Agent: This is our AI that we train to interact within the environment
 * Environment: This can be anything that gives us an observable state
-* State: This is the current position https://github.com/KuanlinBilly/Quantitative-AI-Trading-Bot-2.0/blob/main/README.mdof the agent
+* State: This is the current position of the agent
 * Action: Based on the state, the agent determines the optimal action to take
 * Reward: The environment returns a reward, which can be positive or negative
 
