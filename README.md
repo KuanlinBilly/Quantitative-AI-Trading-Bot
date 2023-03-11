@@ -1,6 +1,6 @@
 # Quantitative AI Trading Bot
 ## Introduction
-### Key concepts in Reinforcement Learning include:
+### Key concepts in Reinforcement Learning:
 * Agent: This is our AI that we train to interact within the environment
 * Environment: This can be anything that gives us an observable state
 * State: This is the current position of the agent
